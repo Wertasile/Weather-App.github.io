@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!----------------------BAR AT THE TOP--------------------------------------------------------------------->
+    <div class='card center-flex' style="flex-direction: row;">
+        <div class="search">
+            <input type="text" placeholder="  Enter City">
+            <div class="search-results">
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn"><img src="images/search.png"></button>
+        </div>
+    </div>
+
+    <!----------------------MAIN BLOCK --------------------------------------------------------------------->
+
+    <div class="main-block">
+
+        <!------------------------------------------------LEFT SIDE----------------------------------------->
+        <div class="LEFT">
+            <div class="today-temp-block">
+                <img class="currentimg">
+                
+                <div class="temp"></div>
+            </div>
+            <div class="time" style="text-align: right;"></div>
+            
+            
+        </div>
+
+        <div class="RIGHT">
+            <div class="container">
+                <div class="item-a">
+                    <div class="subheading">
+                        Air Quality
+                    </div>
+                    <div class="subheading-flex">
+                        <div><img src="Right-Side/wind.png" style="height:50px;"></div>
+                        <div>
+                            <div>PM2.5</div>
+                            <div id="pm2.5">3.90</div>
+                        </div>
+                        <div>
+                            <div>SO2</div>
+                            <div id="so2">7.75</div>
+                        </div>
+                        <div>
+                            <div>NO2</div>
+                            <div id="no2">33.6</div>
+                        </div>
+                        <div>
+                            <div>O3</div>
+                            <div id="o3">38.6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-b">
+                    <div class="subheading">
+                        Sunrise-Sunset
+                    </div>
+                    <div class="subheading-flex">
+                        <div>
+                            <div><img src="Right-Side/sunrise.png" style="height:50px;"></div>
+                        <div id="sunrise">6:00am</div>
+                        </div>
+                        <div>
+                            <div><img src="Right-Side/sunset.png" style="height:50px;"></div>
+                            <div id="sunset">6:00pm</div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="item-c">
+                    <div class="subheading">
+                        Humidity
+                    </div>
+                    <div class="subheading-flex">
+                        <div><img src="Right-Side/humidity.png"  style="height:50px;"></div>
+                        <div id="humidity">90%</div>
+                    </div>
+                </div>
+                <div class="item-d">
+                    <div class="subheading">
+                        Pressure
+                    </div>
+                    <div class="subheading-flex">
+                        <div><img src="Right-Side/air.png"  style="height:50px;"></div>
+                        <div id="pressure">90%</div>
+                    </div>
+                </div>
+                <div class="item-e">
+                    <div class="subheading">
+                        Visibility
+                    </div>
+                    <div class="subheading-flex">
+                        <div><img src="Right-Side/visibility.png"  style="height:50px;"></div>
+                        <div id="visibility">90%</div>
+                    </div>
+                </div>
+                <div class="item-f">
+                    <div class="subheading">
+                        Wind Speed
+                    </div>
+                    <div class="subheading-flex">
+                        <div><img src="Right-Side/wind (1).png"  style="height:50px;"></div>
+                        <div id="wind-speed">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+        <!------------------------------------------------RIGHT SIDE----------------------------------------->
+
+        
+
+    <!----------------------HOURLY BLOCK --------------------------------------------------------------------->
+    <div id="secondary-block"style="padding:20px;">
+
+        <div class="seven-day-grid" style="color:black;">
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+            <div class="grid-item">
+                <img class="dayimg">
+                <div class="daytemp"></div>
+                <div class="daydate"></div>
+            </div>
+        </div>
+        <!-- <h2>TODAYS WEATHER HOURLY</h2> -->
+        
+        <div class="hourly-grid">
+            
+            
+        </div>
+    </div>
+    
+
+    
+</body>
+
+
+</html>
